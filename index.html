@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Empresa de Engenharia</title>
+    
+</head>
+<body>
+  <header class="header">
+    <h1>Empresa de Engenharia</h1>
+</header>
+    <section class="banner">
+      <div class="overlay">
+          <h1>Bem-vindo à Nossa Empresa</h1>
+        <p>Qualidade e Confiança em Engenharia Civil</p>
+        <a href="#contact">Entre em Contato</a>
+        </div>
+    </section>
+
+    <section class="services">
+      <h2>Nossos Serviços</h2>
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="service-item">
+                      <img src="https://via.placeholder.com/300x200" alt="Serviço 1">
+                      <h3>Projeto Estrutural</h3>
+                      <p>Desenvolvimento de projetos estruturais para edificações residenciais e comerciais.</p>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="service-item">
+                      <img src="https://via.placeholder.com/300x200" alt="Serviço 2">
+                      <h3>Consultoria Técnica</h3>
+                      <p>Consultoria especializada em engenharia civil para garantir a qualidade do seu projeto.</p>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="service-item">
+                      <img src="https://via.placeholder.com/300x200" alt="Serviço 3">
+                      <h3>Gestão de Obras</h3>
+                      <p>Planejamento e gestão completa de obras para assegurar prazos e qualidade.</p>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Serviço 4">
+                    <h3>Gestão de Obras</h3>
+                    <p>Planejamento e gestão completa de obras para assegurar prazos e qualidade.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="service-item">
+                  <img src="https://via.placeholder.com/300x200" alt="Serviço 5">
+                  <h3>Gestão de Obras</h3>
+                  <p>Planejamento e gestão completa de obras para assegurar prazos e qualidade.</p>
+              </div>
+          </div>
+          </div>
+         
+      </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 Empresa de Engenharia Civil. Todos os direitos reservados.</p>
+    </div>
+</footer>
+     <script>
+        // Mudança de cor do cabeçalho ao rolar a página
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            header.classList.toggle('active', window.scrollY > 50);
+        });
+       
+          // Inicialização do SwiperJS
+          var swiper = new Swiper('.swiper-container', {
+              slidesPerView: 1,           // Quantos slides são mostrados de cada vez
+              spaceBetween: 10,           // Espaçamento entre os slides
+              loop: false,
+                             // Loop infinito
+              navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+              },
+              breakpoints: {
+                  640: {
+                      slidesPerView: 1,
+                      spaceBetween: 20,
+                  },
+                  768: {
+                      slidesPerView: 2,
+                      spaceBetween: 40,
+                  },
+                  1024: {
+                      slidesPerView: 3,
+                      spaceBetween: 50,
+                  },
+              }
+          });
+     
+    </script>
+</body>
+</html>

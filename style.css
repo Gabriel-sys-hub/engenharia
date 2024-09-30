@@ -1,0 +1,162 @@
+body, html {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.services h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.swiper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o contêiner */
+
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo dentro do slide */
+  align-items: center;     /* Alinha verticalmente */
+  max-width: 300px;       /* Ajuste conforme necessário */
+  margin: 0 10px;         /* Espaçamento entre os slides */
+}
+
+.swiper-wrapper {
+  height: fit-content !important;
+  width: fit-content !important;
+}
+
+.service-item {
+  width: 250px; /* Ajuste para controlar o tamanho dos itens */
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.service-item img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px; /* Espaço entre a imagem e o texto */
+}
+
+.service-item h3 {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #f8c700; /* Cor amarela para os botões */
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+  background: transparent; /* Cabeçalho transparente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background 0.3s ease; /* Transição suave */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff; /* Cor do texto no início */
+}
+
+.header.active {
+  background: #333; /* Cor do fundo quando rolar */
+}
+
+.header.active h1 {
+  color: #fba000; /* Cor do texto ao rolar */
+}
+
+.content {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.banner {
+  background-image: url('https://frsconstrucoescivis.com.br/arquivos/images/slide/slide-frs-engenharia-0-1691587263.webp'); /* Imagem de fundo da seção */
+  height: 600px;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay escuro com 50% de opacidade */
+}
+
+a {
+  color: #fba000;
+  text-decoration: none; 
+}
+
+header h1 {
+  font-size: 50px;
+  margin: 10px 0;
+}
+
+header p {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+header a {
+  background: #fba000;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+.footer {
+  background-color: #333; /* Cor de fundo */
+  color: #fff;            /* Cor do texto */
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;       /* Empurra o rodapé para o final */
+  width: 100%;            /* Largura total do body */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
